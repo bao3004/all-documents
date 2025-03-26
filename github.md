@@ -30,6 +30,8 @@ a. Remote và branch:
 
 >> git checkout -b [branch_name]:tạo một nhánh mới và chuyển sang nhánh đó ngay lập tức.
 
+>> git switch [branch_name]: chuyển đế nhánh khác (nhánh đã tồn tại).
+
 >> git branch: kiểm tra danh sách các nhánh, nhánh hiện tại sẽ được đánh dấu bằng dấu *
 
 >> git branch -D [branch_name]: xóa một branch trong local repository một cách bắt buộc (Dọn dẹp các nhánh không còn sử dụng).
@@ -46,3 +48,16 @@ b. Pull & Push code lên github
 
 - Pull
 >> git pull origin [branch_name]: Lấy tất cả thay đổi từ remote repository về local và hợp nhất với nhánh hiện tại.
+
+c. Tạo script trong packet.json để dùng code terminal nhanh hơn:
+>> npm init -y: khởi tạo file packet.json (nếu chưa có)
+Tại mục script thêm các đoạn code bạn muốn làm gọn và đặt tên cho nó:
+Ví dụ:
+![alt text](./img/script.png)
+>> npm run [name]: chạy đoan code này tùy bạn sử dụng npm hay yarn để hoàn thành
+
+<h2 style="color:red">* Lưu ý:</h2>
+
+- GitHub sử dụng UTC timezone, . Vì vậy, nếu bạn commit sau 19:00 giờ (giờ VN - UTC +7), GitHub mới có thể ghi nhận vào ngày hôm sau.
+- Nếu muốn trang web hoạt động khi upload trang web html/css thì fil index.html phải nằm ở ngoài thư muc gốc thì Github Pages mới hoạt động.
+
